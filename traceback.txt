@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/gui.rpy", line 128, in script
+    define gui.namebox_tile = false
+  File "game/gui.rpy", line 128, in script
+    define gui.namebox_tile = false
+  File "game/gui.rpy", line 128, in <module>
+    define gui.namebox_tile = false
+NameError: name 'false' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 515, in main
+    renpy.game.context().run(node)
+  File "game/gui.rpy", line 128, in script
+    define gui.namebox_tile = false
+  File "game/gui.rpy", line 128, in script
+    define gui.namebox_tile = false
+  File "renpy/ast.py", line 2148, in execute
+    self.set()
+  File "renpy/ast.py", line 2159, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "renpy/python.py", line 2128, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/gui.rpy", line 128, in <module>
+    define gui.namebox_tile = false
+NameError: name 'false' is not defined
+
